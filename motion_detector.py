@@ -35,7 +35,7 @@ while True:
     #find objects
     (cnts,_)=cv2.findContours(thresh_frame.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     for i in cnts:
-        # if object is detached
+        # if object is detacted
         if cv2.contourArea(i) >= 10000:
             # update status to true(object is indeed detacted)
             status=1
